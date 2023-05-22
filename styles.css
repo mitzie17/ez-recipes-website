@@ -18,12 +18,59 @@ a:hover {
     color: #0000FF;
 }
 
-h1 {
-    text-shadow: 0 0 5px #0000FF;
+#dessert-items {
+    float: right;
+}
+
+h1, h2 {
+    text-shadow: 0 0 5px hsl(240, 100%, 50%);
+    text-indent: 5%;
+    font-style: oblique;
 }
 
 #footer {
     font-style: oblique;
     font-size: large;
     text-shadow: 0 0 5px #0000FF;
+    text-align: center;
 }
+
+#new-recipe-background-img {
+    background-image: url("recipe-img.webp");
+    background-size: cover;
+}
+
+#desserts-img {
+    background-image: url("raspberry-dessert.jpeg");
+    background-size: cover;
+}
+
+#ingredients-list {
+    border: solid black;
+    border-style: dotted;
+    margin-top: 1%;
+    background-color: aliceblue;
+}
+
+h3 {
+    text-indent: 1%;
+}
+
+#directions-div {
+    border: solid black;
+    border-style: double;
+    text-indent: 1%;
+    margin-top: 1%;
+    background-color: lightslategray;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    
+    padding: 15px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #0000FF;
+  }
