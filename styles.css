@@ -1,3 +1,15 @@
+/* styles h1, h2, and h3 */
+h1, h2 {
+    text-shadow: 0 0 5px black;
+    text-indent: 5%;
+    font-style: oblique;
+}
+
+h3 {
+    text-indent: 1%;
+}
+
+/* styles homepage, nav links, and footer */
 .homepageimg {
     display: block;
     width: 80%;
@@ -11,21 +23,11 @@
 
 a:visited {
     color: black;
-  }
+}
 
 a:hover {
     background-color: yellow;
     color: #0000FF;
-}
-
-#dessert-items {
-    float: right;
-}
-
-h1, h2 {
-    text-shadow: 0 0 5px hsl(240, 100%, 50%);
-    text-indent: 5%;
-    font-style: oblique;
 }
 
 #footer {
@@ -35,9 +37,9 @@ h1, h2 {
     text-align: center;
 }
 
-#new-recipe-background-img {
-    background-image: url("recipe-img.webp");
-    background-size: cover;
+/* styles desserts page */
+#dessert-items {
+    float: right;
 }
 
 #desserts-img {
@@ -45,15 +47,20 @@ h1, h2 {
     background-size: cover;
 }
 
+/* styles individual dessert page (chocolateicecream.html) */
+.ice-cream-img {
+    border-radius: 10px;
+}
+
+.ice-cream-img:hover {
+    transform: scaleX(-1);
+}
+
 #ingredients-list {
     border: solid black;
     border-style: dotted;
     margin-top: 1%;
     background-color: aliceblue;
-}
-
-h3 {
-    text-indent: 1%;
 }
 
 #directions-div {
@@ -66,11 +73,58 @@ h3 {
 
 th, td {
     border-bottom: 1px solid black;
-    
     padding: 15px;
     text-align: left;
-  }
+}
 
-  th {
+th {
     background-color: #0000FF;
-  }
+}
+
+/* styles new recipe page */
+#new-recipe-background-img {
+    background-image: url("recipe-img.webp");
+    background-size: cover;
+}
+
+input[type=text] {
+    border: 2px solid #0000FF;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 25%;
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    border: 2px solid #0000FF;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 25%;
+    resize: none;
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+}
+
+input[type=submit] {
+    background-color: white;
+    border: 2px solid blue;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 0;
+ }
+
+input[type=submit]:hover {
+        background-color: blue;
+        color: white;
+}
